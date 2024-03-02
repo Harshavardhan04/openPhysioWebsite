@@ -145,22 +145,7 @@
                       <li><b>Compliance and Standardization: </b> The system fully adheres to the FHIR specifications and is regularly updated to align with the latest version of the standard. It ensures that the data models, resources, and APIs are used as intended to maintain compatibility and interoperability with other FHIR-based systems.</li>
                     </ul>
                   </div>
-                  <p>
-                    <br>
-                   <br><br>
-                  </p>
-                  <h5></h5>
-                  <p>
-                    <!-- AvaBot’s functionalities lay largely on document processing,
-                    we accordingly conducted a research over existing document
-                    processing bots on the market. Currently, only a small
-                    number of bots are supporting this feature, where the
-                    maturest one is
-                    <a class="link-hover" href="https://www.automationanywhere.com/products/iq-bot" target="_blank">IQ Bot</a>[2]
-                    by RPA which aims to automatically classify, extract and
-                    validate information from business documents and emails. -->
-                  </p>
-                  <p>
+
 
                   </p>
                 </div>
@@ -169,8 +154,9 @@
           </div>
     </div>
 
-
-   
+    <div class = "container">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
     <h4 class="mb-4">Technology Research</h4>
     <!-- Bootstrap tabs-->
     <div class="tabs-custom tabs-vertical tabs-line" id="tabs-2">
@@ -283,10 +269,110 @@
 
       </div>
     </div>
+    </div>
+    </div>
+</div>
   </div>
+
+  <div class = "container">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+
+              <h4 class="mb-4">User Interface Design</h4>
+              <!-- Bootstrap tabs-->
+              <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1">
+                <!-- Nav tabs-->
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <h5></h5>
+                  <p>
+                   
+
+                    The User Interface (UI) design for our physiotherapy system is a culmination of thoughtful application of established design principles aimed at providing physiotherapists with a tool that is not only powerful but also intuitive and efficient to use. Here's a detailed justification of our design choices:
+                  </p>
+                  <div class="list-content">
+                    <ul class="list-marked">
+                      <li><b>Simplicity:</b> Our UI is designed to avoid unnecessary complexity. The clean layout and minimalistic design visible in the screenshots help users focus on the task at hand without being overwhelmed by excessive information or functionality. The straightforward presentation of patient data, with clear labels for SNOMED codes and values, is an example of this principle in action.</li>
+                      <li><b>Consistency: </b> Consistency in design creates a more predictable and understandable experience. Throughout the interface, consistent color schemes, button styles, and typography are used. This consistency is visible in the uniformity of interactive elements like dropdowns and buttons ("Tabular View" and "Graphical View" toggles), which follow the same design patterns, reducing the cognitive load for users as they navigate through different parts of the system.</li>
+                      <li><b>Visibility:</b> Important information is made visible without cluttering the interface. The dashboard screenshot shows the most crucial information (patient details and latest consultation notes) at the top where it’s readily accessible. In the graphical representation, the trends in patient progress are immediately apparent, making it easy for a physiotherapist to assess at a glance.</li>
+                      <li><b>Feedback: </b> Feedback is essential to interact with any system. Our UI provides immediate feedback upon user interaction. For example, when a physiotherapist selects a different view or a specific SNOMED code, the system responds instantly by updating the display accordingly. This immediate response lets users know their actions have been registered.</li>
+                      <li><b>Tolerance: </b> Our system is tolerant of errors, providing easy ways to correct them. The ability to easily switch between "Tabular" and "Graphical" views allows users to navigate between detailed data and visual representations without penalty or confusion, accommodating different preferences or accidental clicks.</li>
+                        <li><b>Affordance: </b> Elements are designed so that they are intuitively understood in terms of their functionality. For instance, buttons for downloading data are placed right next to the data points they relate to, making it clear what action will be taken when they are clicked.</li>
+                        <li><b>User Centric Design: </b> The design is tailored for physiotherapists who need quick access to patient data and trends. The graphical view, for instance, provides an immediate visual representation of a patient’s progress over time, which is a vital feature for tracking rehabilitation outcomes.</li>
+                        <li><b>Accessibility: </b>Accessibility features are incorporated to ensure that the UI is usable by all physiotherapists, including those with disabilities. Adequate color contrast, as shown in the screenshots, ensures readability for users with visual impairments.</li>
+                        <li><b>Efficiency: </b>Efficiency is key for busy professionals. The "Show More Past Data" button is a direct call to action that provides more detailed historical data on demand, allowing physiotherapists to quickly access extended patient histories when needed without navigating away from the dashboard.</li>
+
+
+                    </ul>
+
+                    <div class="row ui-design-screenshots">
+                        <!-- Screenshot 1 -->
+                        <div class="col-md-4">
+                          <figure class="ui-screenshot-figure">
+                            <img src="./assets/images/research/dashboard.png" alt="Dashboard View" class="img-fluid ui-screenshot-img" onclick="expandImage(this);"> 
+                            <figcaption>Caption for Dashboard View</figcaption>
+                          </figure>
+                        </div>
+                        <!-- Screenshot 2 -->
+                        <div class="col-md-4">
+                          <figure class="ui-screenshot-figure">
+                            <img src="./assets/images/research/graph.png" alt="Graphical View" class="img-fluid ui-screenshot-img" onclick="expandImage(this);">
+                            <figcaption>Caption for Graphical View</figcaption>
+                          </figure>
+                        </div>
+                        <!-- Screenshot 3 -->
+                        <div class="col-md-4">
+                          <figure class="ui-screenshot-figure">
+                            <img src="./assets/images/research/pastdata.png" alt="Detailed Data View" class="img-fluid ui-screenshot-img" onclick="expandImage(this);">
+                            <figcaption>Caption for Detailed Data View</figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
+
+                    <p>The final UI designs, as shown in the attached screenshots, are a direct reflection of these principles. The blue color theme is calm and professional, aligning with healthcare settings, while the ample white space prevents information overload. The layout is strategically organized, with the most frequently used information placed prominently for easy access, facilitating a smooth workflow for physiotherapists who would be using the system in potentially fast-paced environments.</p>
+                  </div>
+
+
+                  </p>
+                </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              
 </div>
 </section>
 <!-- Welcome Area End -->
 
 </body>
 </html>
+
+<script>
+    // Function to expand the image
+    function expandImage(imgElement) {
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      // Get the image and insert it inside the modal
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      
+      modal.style.display = "block";
+      modalImg.src = imgElement.src;
+      captionText.innerHTML = imgElement.alt;
+    
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+    
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    

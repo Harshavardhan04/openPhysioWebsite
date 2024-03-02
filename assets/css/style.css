@@ -3670,3 +3670,79 @@ body {
     background-color: white; /* Background color for the content */
   }
   
+
+
+  /*research page technology research tags*/
+
+  /* CSS for User Interface Design Images */
+.ui-design-screenshots .ui-screenshot-figure {
+    margin-bottom: 20px; /* Space below each image */
+  }
+  
+  .ui-design-screenshots .ui-screenshot-img {
+    width: 100%; /* Force all images to be 100% width of their parent */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without stretching the image */
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+  }
+  
+  .ui-design-screenshots figcaption {
+    text-align: center; /* Center-align the caption text */
+    margin-top: 8px; /* Space above the caption */
+    font-style: italic; /* Optional: italicize the caption text */
+  }
+  
+  /* Style the modal (full-screen image overlay) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Black background with opacity */
+    background-color: rgba(0,0,0,0.9); /* Black w/opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 1200;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* The Close Button */
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px; /* Adjusted for better visibility */
+    right: 25px; /* Adjusted for better visibility */
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
