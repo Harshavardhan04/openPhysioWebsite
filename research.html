@@ -187,9 +187,30 @@
                                 and potential of FHIR to transform data handling in various medical specialties,
                                 including physiotherapy, as the field advances and adopts more digital health
                                 technologies.
-                            <p>Having had a research on some existing systems which use FHIR, we evaluate a good
+                            </p> 
+                            <h5>Analysis of the NHS's Current Statistical Analysis Tool</h5>
+                        <p>
+                            The closest project we could find is the statistical analysis tool that the NHS currently uses. This is based on Excel; it is an analytical technique for plotting data over time and helps specialists view the changes over time through a graphical representation. Yet, there are some issues evident:
+                        </p>
+                        <ol style="color: #555;">
+                            <li>The interface suffers from <b>excessive clutter</b>, presenting an overwhelming amount of information on a single page. This could be particularly perplexing for users unfamiliar with the system, potentially hindering their ability to navigate and comprehend the interface effectively.</li>
+                            <li>The system's <b>learnability appears to be somewhat challenging</b> due to the assumption of pre-existing knowledge about statistical analysis, which may not be readily available to doctors. Additionally, the absence of prompts within the system on initial steps or a clear workflow creates a lack of guidance. This deficiency in a structured flow potentially complicates the user experience, making it more challenging for users to grasp how to navigate and utilize the system effectively.
+                            </li>
+                            <li>The <b>absence of any notes associated with data points</b> presents a challenge, as it hinders the comprehensive understanding of what each data point signifies. This deficiency not only makes it difficult to discern the significance of the data but also overlooks crucial qualitative details that are essential for making informed decisions.
+                            </li>
+                            <li>The system is <b>reliant on Excel</b>, a software that may not be the most user-friendly and readable for all users. One notable challenge is the necessity to save data manually at every step, introducing potential data integrity issues. Additionally, the requirement for a separate Excel document for each patient contributes to organizational difficulties, compelling users to locate and manage individual patient files. 
+                            </li>
+                        </ol>
+                        <div class="image-container text-center mt-4">
+                            <img src="./assets/images/research/nhsspctool.jpeg" alt="NHS Statistical Analysis Tool" class="img-fluid">
+                            <p class="image-caption">Reference: <a href="https://www.england.nhs.uk/statistical-process-control-tool/">https://www.england.nhs.uk/statistical-process-control-tool/</a>. Disclaimer: Image quality may be poor due to original source limitations.</p>
+                        </div>
+
+                        <p>Moving to a web app presents a viable solution to these challenges. The backend of a web app can adeptly manage data-saving processes, eliminating the need for manual interventions. Additionally, the system can efficiently centralize patient information, eliminating the cumbersome task of juggling individual Excel documents for each patient. Moreover, the web app facilitates a more organized presentation by segregating information and data systematically, enhancing both the learnability and visual appeal of the UI. This strategic arrangement contributes to an intuitive user experience, making the statistical analysis tool more accessible and user-friendly. In essence, the transition not only streamlines workflow but also significantly elevates the overall quality of user interaction with the system.
+                        </p>
+                            <p>Based on our reasearch of this product and systems which use FHIR, we evaluate a good
                                 FHIR-compliant system for physiotherapy by the following features:</p>
-                            </p>
+                            
                             <div class="list-content">
                                 <ul class="list-marked">
                                     <li><b>Comprehensive Interoperability:</b> The system effectively uses FHIR
