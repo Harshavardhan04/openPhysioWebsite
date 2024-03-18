@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required Meta Tags -->
     <meta charset="UTF-8">
@@ -24,29 +25,49 @@
         .image-row {
             display: flex;
             overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
             gap: 15px;
-            align-items: center; /* Center images vertically */
+            align-items: center;
+            /* Center images vertically */
         }
 
         .image-box {
             flex: 0 0 auto;
             width: 300px;
             cursor: pointer;
-            text-align: center; /* Center image horizontally */
+            text-align: center;
+            /* Center image horizontally */
         }
 
         .image-box img {
             width: 100%;
             border-radius: 5px;
-            vertical-align: middle; /* Align image vertically */
+            vertical-align: middle;
+            /* Align image vertically */
         }
 
         .caption {
             text-align: center;
-            color: black;
+            color:
+                black;
+        }
+
+        .scroll-caption {
+            white-space: nowrap;
+            /* Keep the text on one line */
+            color: #777;
+            /* Grey color for the caption */
+            padding: 10px;
+            font-size: 14px;
+            /* Smaller font size for the caption */
+            align-self: center;
+            /* Center vertically in the flex container */
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <!-- Preloader Starts -->
     <div class="preloader">
@@ -55,7 +76,101 @@
     <!-- Preloader End -->
 
     <!-- Header Area Starts -->
+    <header class="header-area">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
 
+
+                    <div class="col-lg-3">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header" id="home">
+            <div class="container">
+                <div class="row align-items-center justify-content-between d-flex">
+                    <div id="logo">
+                        <a href="index.html"><img src="" alt="" title="" /></a>
+                    </div>
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li class="menu-active"><a href="index.html">Home</a></li>
+                            <li class="menu-has-children"><a href="requirements.html">Requirements</a>
+                                <ul>
+                                    <li><a class="dropdown-item" href="requirements.html#project-background">Project
+                                            Background</a></li>
+                                    <li><a class="dropdown-item" href="requirements.html#client-requirements">Client
+                                            Requirements</a></li>
+                                    <li><a class="dropdown-item" href="requirements.html#user-interviews">User
+                                            Interviews</a></li>
+                                    <li><a class="dropdown-item" href="requirements.html#personas">Personas</a></li>
+                                    <li><a class="dropdown-item" href="requirements.html#use-cases">Use Cases</a></li>
+                                    <li><a class="dropdown-item" href="requirements.html#moscow-list">MosCow List</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="research.html">research</a></li>
+                            <li><a href="ui.html">UI Design</a></li>
+
+
+
+                            <li class="menu-has-children"><a href="sysdesign.html">System Design</a>
+                                <ul>
+                                    <li><a href="systemdesign.html#sysarchitecture">System Architecture</a></li>
+                                    <li><a href="">Sequence Diagram</a></li>
+                                    <li><a href="">Sequence Diagram</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-has-children"><a href="implementation.html">Implementation</a>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-has-children"><a href="testing.html">Testing</a>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-has-children"><a href="evaluation.html">Evaluation</a>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-has-children"><a href="appendix.html">Appe</a>
+                                <ul>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav><!-- #nav-menu-container -->
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- Javascript -->
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
     <script src="assets/js/vendor/bootstrap-4.1.3.min.js"></script>
@@ -67,49 +182,57 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Header Area Ends -->
-    
+
     <!-- Banner Area Starts -->
     <section class="banner-area other-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Testing</h1>
+                    <h1>HCI / User Interface</h1>
                     <a href="index.html">Home</a> <span>|</span> <a href="ui.html">User Interface</a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Sketch Iteration Starts -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Sketch Iterations</h2>
-        
+    <div class="container mt-5" id = "sketches">
+        <h4 class="text-center mb-4">Sketch Iterations</h4>
+
         <!-- Iteration 1 -->
         <div class="mb-5">
-            <h3>Iteration 1</h3>
+            <h5><b>Iteration 1</b></h5>
+            <p>Upon meeting with our clients and discussing the initial approaches to our system, we started to conduct
+                our HCI - focused research for our interface. We took an agile approach to refining our sketches, making
+                sure that the user was involved in every step of the process.
+                Iteration of our sketches:
+            </p>
             <div class="image-row">
                 <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
-                    <img src="./assets/images/ui/it1_1.png" class="img-fluid" alt="Sketch 1">
+                    <img src="./assets/images/ui/sketches/iteration1/it1_1.png" class="img-fluid" alt="Sketch 1">
                     <p class="caption">Caption for Image 1</p>
                 </div>
                 <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
-                    <img src="./assets/images/ui/it1_2.png" class="img-fluid" alt="Sketch 2">
+                    <img src="./assets/images/ui/sketches/iteration1/it1_2.png" class="img-fluid" alt="Sketch 2">
                     <p class="caption">Caption for Image 2</p>
                 </div>
                 <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-3">
-                    <img src="./assets/images/ui/it1_3.png" class="img-fluid" alt="Sketch 3">
+                    <img src="./assets/images/ui/sketches/iteration1/it1_3.png" class="img-fluid" alt="Sketch 3">
                     <p class="caption">Caption for Image 3</p>
                 </div>
             </div>
         </div>
+        <p>Upon the first meeting with the technical team we had come up with the above initial design. It served as the
+            basis to our understanding of what the requirements were. </p>
         <!-- Repeat for other iterations -->
-        
+
         <!-- Modal for Iteration 1 Image 1 -->
         <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="./assets/images/ui/it1_1.png" class="modal-img img-fluid" alt="Sketch 1">
+                        <img src="./assets/images/ui/sketches/iteration1/it1_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
                     </div>
                 </div>
             </div>
@@ -119,7 +242,8 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="./assets/images/ui/it1_2.png" class="modal-img img-fluid" alt="Sketch 2">
+                        <img src="./assets/images/ui/sketches/iteration1/it1_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
                     </div>
                 </div>
             </div>
@@ -128,16 +252,821 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <img src="./assets/images/ui/it1_3.png" class="modal-img img-fluid" alt="Sketch 3">
+                        <img src="./assets/images/ui/sketches/iteration1/it1_3.png" class="modal-img img-fluid"
+                            alt="Sketch 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sketch Iteration Ends -->
+
+
+
+
+        <!-- Iteration 1 -->
+        <div class="mb-5">
+            <h5><b>Iteration 2</b></h5>
+
+            <div class="image-row">
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/sketches/iteration2/it2_1.png" class="img-fluid" alt="Sketch 1">
+                    <p class="caption">Caption for Image 1</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
+                    <img src="./assets/images/ui/sketches/iteration2/it2_2.png" class="img-fluid" alt="Sketch 2">
+                    <p class="caption">Caption for Image 2</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-3">
+                    <img src="./assets/images/ui/sketches/iteration2/it2_3.png" class="img-fluid" alt="Sketch 3">
+                    <p class="caption">Caption for Image 3</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-4">
+                    <img src="./assets/images/ui/sketches/iteration2/it2_4.png" class="img-fluid" alt="Sketch 4">
+                    <p class="caption">Caption for Image 4</p>
+                </div>
+
+            </div>
+            <p class="scroll-caption">Scroll for more</p>
+        </div>
+        <p>After engaging in a conversation with our end user, the physiotherapist, valuable insights were gained,
+            prompting adjustments to our user interface (UI). The physiotherapist emphasized the importance of a
+            graphical representation of data points and suggested replacing the manual generation of graphs through
+            Excel with a more streamlined approach. In response to this feedback, we made the decision to introduce a
+            dedicated "View Charts" page within our UI. This new feature allows users to visually explore various data
+            points over time, providing a more intuitive and efficient way to comprehend trends. By integrating this
+            functionality, we aim to enhance the user experience, ensuring that data analysis is not only comprehensive
+            but also visually accessible, ultimately optimizing the utility of our application for the physiotherapist
+            and facilitating a more informed decision-making process.
+        </p>
+        <!-- Repeat for other iterations -->
+
+        <!-- Modal for Iteration 1 Image 1 -->
+        <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration2/it2_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat modals for other images -->
+        <div class="modal fade" id="modal1-2" tabindex="-1" aria-labelledby="modal1-2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration2/it2_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-3" tabindex="-1" aria-labelledby="modal1-3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration2/it2_3.png" class="modal-img img-fluid"
+                            alt="Sketch 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-4" tabindex="-1" aria-labelledby="modal1-4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration2/it2_4.png" class="modal-img img-fluid"
+                            alt="Sketch 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h5><b>Iteration 3</b></h5>
+
+            <div class="image-row">
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/sketches/iteration3/it3_1.png" class="img-fluid" alt="Sketch 1">
+                    <p class="caption">Caption for Image 1</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
+                    <img src="./assets/images/ui/sketches/iteration3/it3_2.png" class="img-fluid" alt="Sketch 2">
+                    <p class="caption">Caption for Image 2</p>
+                </div>
+            </div>
+        </div>
+        <p>Upon gathering additional insights from the physiotherapist, it became evident that introducing a desired
+            value for each field would significantly enhance the utility of our system. In many instances,
+            physiotherapists seek specific values to gauge a patient's progress, making the inclusion of desired values
+            a crucial feature. To visually reinforce the significance of these desired values, we implemented a red line
+            on the graphs, providing a clear point of reference for assessment and emphasizing the practicality of the
+            graphical representation in identifying trends.</p>
+
+        <p>
+            In further discussions with physiotherapists, they highlighted the relevance of LOINC (Logical Observation
+            Identifiers Names and Codes) and SNOMED (Systematized Nomenclature of Medicine) codes in physiotherapy
+            practices, specifically for standardizing measurements and identifying body parts. Acknowledging the
+            importance of aligning with industry conventions, we made the strategic decision to integrate LOINC and
+            SNOMED codes into our system. By doing so, we not only ensure our system is in harmony with established
+            practices but also facilitate seamless communication and interoperability within the physiotherapy
+            community. This integration reflects our commitment to providing a comprehensive and standardized solution
+            tailored to the specific needs of physiotherapists.
+        </p>
+        <!-- Repeat for other iterations -->
+
+        <!-- Modal for Iteration 1 Image 1 -->
+        <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration3/it3_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat modals for other images -->
+        <div class="modal fade" id="modal1-2" tabindex="-1" aria-labelledby="modal1-2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration2/it3_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Iteration 4 -->
+        <div class="mb-5">
+            <h5><b>Iteration 4</b></h5>
+
+            <div class="image-row">
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_1.png" class="img-fluid" alt="Sketch 1">
+                    <p class="caption">Caption for Image 1</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_2.png" class="img-fluid" alt="Sketch 2">
+                    <p class="caption">Caption for Image 2</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-3">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_3.png" class="img-fluid" alt="Sketch 3">
+                    <p class="caption">Caption for Image 3</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-4">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_4.png" class="img-fluid" alt="Sketch 4">
+                    <p class="caption">Caption for Image 4</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-5">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_5.png" class="img-fluid" alt="Sketch 5">
+                    <p class="caption">Caption for Image 5</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-6">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_6.png" class="img-fluid" alt="Sketch 6">
+                    <p class="caption">Caption for Image 6</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-7">
+                    <img src="./assets/images/ui/sketches/iteration4/it4_7.png" class="img-fluid" alt="Sketch 7">
+                    <p class="caption">Caption for Image 7</p>
+                </div>
+            </div>
+            <p class="scroll-caption">Scroll for more</p>
+        </div>
+        <p>Following a discussion with our professor, it became evident that there was an opportunity to refine the
+            user-centricity of our system. The suggestion to incorporate both tabular and graphical views for presenting
+            data emerged as a key enhancement. By providing users with the flexibility to seamlessly toggle between
+            these two perspectives, we empower them with greater control over the system. This dual-view functionality
+            not only caters to diverse user preferences but also acknowledges the varying analytical needs that users
+            may have. The tabular view offers a detailed, structured representation of data, while the graphical view
+            ensures a visual, at-a-glance comprehension of trends. This integration places user control and choice at
+            the forefront, ultimately enriching the overall user experience within our system.
+        </p>
+
+
+        <!-- Repeat for other iterations -->
+
+        <!-- Modal for Iteration 1 Image 1 -->
+        <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat modals for other images -->
+        <div class="modal fade" id="modal1-2" tabindex="-1" aria-labelledby="modal1-2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-3" tabindex="-1" aria-labelledby="modal1-3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_3.png" class="modal-img img-fluid"
+                            alt="Sketch 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal1-4" tabindex="-1" aria-labelledby="modal1-4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_4.png" class="modal-img img-fluid"
+                            alt="Sketch 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-5" tabindex="-1" aria-labelledby="modal1-5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_5.png" class="modal-img img-fluid"
+                            alt="Sketch 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-6" tabindex="-1" aria-labelledby="modal1-6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_6.png" class="modal-img img-fluid"
+                            alt="Sketch 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-7" tabindex="-1" aria-labelledby="modal1-7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration4/it4_7.png" class="modal-img img-fluid"
+                            alt="Sketch 7">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Iteration 5 -->
+        <div class="mb-5">
+            <h5><b>Iteration 5</b></h5>
+
+            <div class="image-row">
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_1.png" class="img-fluid" alt="Sketch 1">
+                    <p class="caption">Caption for Image 1</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_2.png" class="img-fluid" alt="Sketch 2">
+                    <p class="caption">Caption for Image 2</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-3">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_3.png" class="img-fluid" alt="Sketch 3">
+                    <p class="caption">Caption for Image 3</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-4">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_4.png" class="img-fluid" alt="Sketch 4">
+                    <p class="caption">Caption for Image 4</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-5">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_5.png" class="img-fluid" alt="Sketch 5">
+                    <p class="caption">Caption for Image 5</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-6">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_6.png" class="img-fluid" alt="Sketch 6">
+                    <p class="caption">Caption for Image 6</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-7">
+                    <img src="./assets/images/ui/sketches/iteration5/it5_7.png" class="img-fluid" alt="Sketch 7">
+                    <p class="caption">Caption for Image 7</p>
+                </div>
+            </div>
+            <p class="scroll-caption">Scroll for more</p>
+        </div>
+        <p> After revisiting our users to present the refinements we integrated into our sketches, we identified a
+            potential concern with the existing design. The amalgamation of different components, including the latest
+            consultation, today's consultation, and the management of desired SNOMED values, all confined to a single
+            page, resulted in an overflow of content.Further resulting in an inconvenient amount of scrolling. To
+            address this concern and enhance user control, we have implemented tabs for each distinct section of our
+            system. This strategic adjustment ensures that users can efficiently navigate between sections without the
+            need for continuous scrolling, thereby improving the overall usability of the interface.</p>
+
+        <p> By introducing these tabs, we not only mitigate the scrolling issue but the improved navigational structure
+            aligns with the users' mental models, providing a more intuitive and predictable experience. Users can now
+            easily locate and access specific sections, fostering a sense of control and reducing cognitive load.This
+            modification contributes to a cleaner and less cluttered interface, promoting faster information retrieval
+            and aids in preventing information overload. As a result, the users can focus more on the task at hand,
+            enhancing their overall efficiency and satisfaction with the system.</p>
+
+
+
+        <!-- Repeat for other iterations -->
+
+        <!-- Modal for Iteration 1 Image 1 -->
+        <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat modals for other images -->
+        <div class="modal fade" id="modal1-2" tabindex="-1" aria-labelledby="modal1-2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-3" tabindex="-1" aria-labelledby="modal1-3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_3.png" class="modal-img img-fluid"
+                            alt="Sketch 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal1-4" tabindex="-1" aria-labelledby="modal1-4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_4.png" class="modal-img img-fluid"
+                            alt="Sketch 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-5" tabindex="-1" aria-labelledby="modal1-5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_5.png" class="modal-img img-fluid"
+                            alt="Sketch 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-6" tabindex="-1" aria-labelledby="modal1-6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_6.png" class="modal-img img-fluid"
+                            alt="Sketch 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-7" tabindex="-1" aria-labelledby="modal1-7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/sketches/iteration5/it5_7.png" class="modal-img img-fluid"
+                            alt="Sketch 7">
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+    <div class="container mt-5" id = "prototypes">
+        <h4 class="text-center mb-4">Prototypes</h4>
+        <div class="mb-5">
+            <h5><b>Prototype 1</b></h5>
+
+            <div class="image-row">
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_1.png" class="img-fluid"
+                        alt="Prototype 1">
+                    <p class="caption">Landing Page</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_2.png" class="img-fluid"
+                        alt="Prototype 2">
+                    <p class="caption">Dashboard</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-3">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_3.png" class="img-fluid"
+                        alt="Prototype 3">
+                    <p class="caption">View All Past Data</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-4">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_4.png" class="img-fluid"
+                        alt="Prototype 4">
+                    <p class="caption">CSV File - Donwloaded Consultation</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_5.png" class="img-fluid"
+                        alt="Prototype 5">
+                    <p class="caption">Graphical View Page</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-6">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_6.png" class="img-fluid"
+                        alt="Prototype 6">
+                    <p class="caption">New Consultation Page </p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-7">
+                    <img src="./assets/images/ui/prototype/prototype1/prototype1_7.png" class="img-fluid"
+                        alt="Prototype 7">
+                    <p class="caption">Update Desired Values for Snomed Page</p>
+                </div>
+            </div>
+            <p class="scroll-caption">Scroll for more</p>
+        </div>
+        <p>The landing page of our system is a “find patient profile” page where the user needs to enter the patient ID.
+            When the user clicks on “next”, the user lands on the dashboard page. This has the required details of the
+            patient that the physiotherapists need to see such as name, date of birth and patient ID. Then there is a
+            display of the “Latest consultation” where the details of the previous consultation. When “show more past
+            data” is clicked, the page below appears. Through this page, the physiotherapist can find all the past data
+            of all previous consultations, filtering which specific consultations and SNOMED codes they want to view.
+            The physiotherapist is able to download all the details of a specific consultation which includes the notes
+            and values recorded during the consultation. In order to return back to the page above, click “back to
+            dashboard”.
+            When the user clicks on download full data of specific consultation, a table will be downloaded like the one
+            below. The table will contain all the values recorded in that specific consultation with the notes of that
+            consultation there too. In the dashboard page, the user is able to switch between a tabular and graphical
+            view of the data. In the graphical view, the user can select a specific SNOMED code they want to observe the
+            trend of through consultations. This graphical view enables the user to visually see progress made through
+            the ability to see the desired value against the values recorded during each session. As the user scrolls
+            down the dashboard page, they will see the “Today’s consultation section. Here the physiotherapist is able
+            to add in the problem description, which are qualitative notes they write during the consultation. They are
+            then able to add new measure values of the current consultation, adding as many as required. For each value
+            they also need to find out the SNOMED and LOINC codes. After they are done, the user needs to click save.
+            With the bin icon, the user needs to click it to remove a row of a value that they don’t require. The add
+            icon is to add another row, so they can add in more values they’ve recorded to the system. The final section
+            of the dashboard page is the updating of desired SNOMED values. Here there is a table of all the SNOMED
+            codes that the current patient is seen for and their corresponding desired values. The physiotherapist is
+            able to update the desired value and progress is not linear and usually the milestones reached in treatment
+            can sometimes change the desired values. When the user clicks “log out” they return back to the “Find
+            patient profile”. This is the full proposed lifecycle of the system.
+
+
+        </p>
+
+
+        <!-- Repeat for other iterations -->
+
+        <!-- Modal for Iteration 1 Image 1 -->
+        <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat modals for other images -->
+        <div class="modal fade" id="modal1-2" tabindex="-1" aria-labelledby="modal1-2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-3" tabindex="-1" aria-labelledby="modal1-3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_3.png" class="modal-img img-fluid"
+                            alt="Sketch 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal1-4" tabindex="-1" aria-labelledby="modal1-4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_4.png" class="modal-img img-fluid"
+                            alt="Sketch 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-5" tabindex="-1" aria-labelledby="modal1-5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_5.png" class="modal-img img-fluid"
+                            alt="Sketch 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-6" tabindex="-1" aria-labelledby="modal1-6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_6.png" class="modal-img img-fluid"
+                            alt="Sketch 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-7" tabindex="-1" aria-labelledby="modal1-7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype1_7.png" class="modal-img img-fluid"
+                            alt="Sketch 7">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mb-5">
+            <h5><b>Prototype 2</b></h5>
+
+            <div class="image-row">
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_1.png" class="img-fluid"
+                        alt="Prototype 1">
+                    <p class="caption">Landing Page</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-2">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_2.png" class="img-fluid"
+                        alt="Prototype 2">
+                    <p class="caption">Dashboard</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-3">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_3.png" class="img-fluid"
+                        alt="Prototype 3">
+                    <p class="caption">View All Past Data</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-4">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_4.png" class="img-fluid"
+                        alt="Prototype 4">
+                    <p class="caption">CSV File - Donwloaded Consultation</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_5.png" class="img-fluid"
+                        alt="Prototype 5">
+                    <p class="caption">Graphical View Page</p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-6">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_6.png" class="img-fluid"
+                        alt="Prototype 6">
+                    <p class="caption">New Consultation Page </p>
+                </div>
+                <div class="image-box" data-bs-toggle="modal" data-bs-target="#modal1-7">
+                    <img src="./assets/images/ui/prototype/prototype3/prototype3_7.png" class="img-fluid"
+                        alt="Prototype 7">
+                    <p class="caption">Update Desired Values for Snomed Page</p>
+                </div>
+            </div>
+            <p class="scroll-caption">Scroll for more</p>
+        </div>
+        <p>Prototype 2 is very similar to prototype 1 except for the structural design change of incorporating tabs for
+            each individual component of our system. As seen below the user needs to click on the different tabs such as
+            “ Latest Consultation details”, “Show all Data”,
+            “Graphical view” e.t.c in order to access each individual component. The components themselves operate in
+            the same way as that in Prototype 1. Additionally, dates of consultations have been incorporated on all
+            pages of the system to provide a clear understanding of when the data was recorded.
+        </p>
+
+
+        <!-- Repeat for other iterations -->
+
+        <!-- Modal for Iteration 1 Image 1 -->
+        <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="modal1-1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype3/prototype3_1.png" class="modal-img img-fluid"
+                            alt="Sketch 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat modals for other images -->
+        <div class="modal fade" id="modal1-2" tabindex="-1" aria-labelledby="modal1-2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype3/prototype3_2.png" class="modal-img img-fluid"
+                            alt="Sketch 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-3" tabindex="-1" aria-labelledby="modal1-3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype3/prototype3_3.png" class="modal-img img-fluid"
+                            alt="Sketch 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal1-4" tabindex="-1" aria-labelledby="modal1-4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype3/prototype3_4.png" class="modal-img img-fluid"
+                            alt="Sketch 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-5" tabindex="-1" aria-labelledby="modal1-5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype3_5.png" class="modal-img img-fluid"
+                            alt="Sketch 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-6" tabindex="-1" aria-labelledby="modal1-6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype3_6.png" class="modal-img img-fluid"
+                            alt="Sketch 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1-7" tabindex="-1" aria-labelledby="modal1-7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./assets/images/ui/prototype/prototype1/prototype3_7.png" class="modal-img img-fluid"
+                            alt="Sketch 7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id = "ui-design">
+
+            <div class="col-xl-10">
+
+                <h4 class="mb-4">User Interface Design</h4>
+                <!-- Bootstrap tabs-->
+
+                    <!-- Nav tabs-->
+                    <!-- Tab panes-->
+
+                        <h5></h5>
+                        <p>
+
+
+                            The User Interface (UI) design for our physiotherapy system is a culmination of
+                            thoughtful application of established design principles aimed at providing
+                            physiotherapists with a tool that is not only powerful but also intuitive and efficient
+                            to use. Here's a detailed justification of our design choices:
+                        </p>
+                        <div class="list-content">
+                            <ul class="list-marked">
+                                <li><b>Flexibility: </b>The user interface has been meticulously crafted to empower users
+                                    with the flexibility to customize their system experience according to their
+                                    preferences. Whether opting for a visually intuitive graph representation or a more
+                                    structured tabular view, users can effortlessly navigate and interpret the data from
+                                    physio sessions in a way that suits them best. In the initial stages, our design
+                                    inclination leaned towards a singular reliance on the graph view, supplemented by
+                                    the provision of Excel sheets for each SNOMED code. However, upon revisiting this
+                                    approach, we recognized the potential cognitive overload posed by the multitude of
+                                    pages, particularly with the extensive data also available in the Excel sheets. To
+                                    enhance user clarity and streamline the system, we opted for a tabular view. This
+                                    user-friendly interface allows users to conveniently filter data based on SNOMED
+                                    values, facilitating a more focused and efficient exploration of information.
+                                    Additionally, we introduced a "recent consultation details" feature to further
+                                    enhance user accessibility and overall ease of interaction with the system.
+                                </li>
+                                <li><b>Simplicity:</b> We've chosen a simple and minimalistic UI, prioritizing clarity
+                                    and ease of use. This intentional design approach ensures that our UI remains
+                                    intuitive and user-friendly, allowing individuals to navigate the system
+                                    effortlessly. By minimizing complexity and focusing on essential features, we aim to
+                                    enhance the overall user experience, making interactions with our system
+                                    straightforward and enjoyable. The straightforward presentation of patient data,
+                                    with clear
+                                    labels for SNOMED codes and values, is an example of this principle in action.
+                                </li>
+                                <li><b>Consistency: </b> Consistency in design creates a more predictable and
+                                    understandable experience. Throughout the interface, consistent color schemes,
+                                    button styles, and typography are used. This consistency is visible in the
+                                    uniformity of interactive elements like dropdowns and buttons ("Tabular View"
+                                    and "Graphical View" toggles), which follow the same design patterns, reducing
+                                    the cognitive load for users as they navigate through different parts of the
+                                    system.</li>
+                                <li><b>Effective Feedback / Visibility:</b> Effective feedback is crucial for keeping
+                                    users informed about the success of their actions. In our system, we prioritize this
+                                    by implementing a prompt system. For instance, when a user adds new consultation
+                                    details and saves them, a pop-up message instantly appears, confirming that the
+                                    "session saved successfully." This immediate and reactive feedback enhances user
+                                    confidence in the system, fostering a more comfortable and trusting user experience.
+                                    Moreover, the feedback in our system is visually accessible, allowing users to
+                                    witness and validate the impact of their changes instantly. </li>
+                                <li><b>Feedback: </b> Feedback is essential to interact with any system. Our UI
+                                    provides immediate feedback upon user interaction. For example, when a
+                                    physiotherapist selects a different view or a specific SNOMED code, the system
+                                    responds instantly by updating the display accordingly. This immediate response
+                                    lets users know their actions have been registered.</li>
+                                <li><b>Tolerance: </b> Our system is tolerant of errors, providing easy ways to
+                                    correct them. The ability to easily switch between "Tabular" and "Graphical"
+                                    views allows users to navigate between detailed data and visual representations
+                                    without penalty or confusion, accommodating different preferences or accidental
+                                    clicks.</li>
+                                <li><b>Affordance: </b> Elements are designed so that they are intuitively
+                                    understood in terms of their functionality. For instance, buttons for
+                                    downloading data are placed right next to the data points they relate to, making
+                                    it clear what action will be taken when they are clicked.</li>
+                                <li><b>User Centric Design: </b> The design is tailored for physiotherapists who
+                                    need quick access to patient data and trends. The graphical view, for instance,
+                                    provides an immediate visual representation of a patient’s progress over time,
+                                    which is a vital feature for tracking rehabilitation outcomes.</li>
+                                <li><b>Accessibility: </b>Accessibility features are incorporated to ensure that the
+                                    UI is usable by all physiotherapists, including those with disabilities.
+                                    Adequate color contrast, as shown in the screenshots, ensures readability for
+                                    users with visual impairments.</li>
+                                <li><b>Efficiency: </b>Efficiency is key for busy professionals. The "Show More Past
+                                    Data" button is a direct call to action that provides more detailed historical
+                                    data on demand, allowing physiotherapists to quickly access extended patient
+                                    histories when needed without navigating away from the dashboard.</li>
+                                <li><b>Placing the user at the centre: </b>Placing users at the core of every UI design
+                                    decision is of paramount importance. Following the creation of each sketch, we
+                                    consistently circle back to our users, actively seeking their valuable input and
+                                    gaining an in-depth understanding of their needs. This iterative process ensures
+                                    that our design choices are not only aligned with user preferences but also rooted
+                                    in a profound comprehension of their requirements. By prioritizing user feedback
+                                    throughout the design journey, we cultivate a user-centric approach that enhances
+                                    the usability of the interface.</li>
+                                <li><b>Constraints/Error Prevention: </b>Emphasis on precision extends to the careful
+                                    imposition of character constraints on SNOMED codes, LOINC codes, and associated
+                                    values within our system. These constraints play a pivotal role in error prevention,
+                                    ensuring a seamless flow of operations for both the system and the user. By limiting
+                                    the acceptable character types of SNOMED and LOINC codes, as well as their
+                                    respective values, we fortify the reliability of our system. This approach not only
+                                    safeguards against potential inaccuracies but also contributes to an enhanced user
+                                    experience, promoting a system that operates efficiently and with minimal
+                                    disruptions.</li>
+
+
+                            </ul>
+
+                        
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+
+                            <p>The final UI prototype, prototype 2,  s a direct reflection
+                                of these principles. The blue color theme is calm and professional, aligning with
+                                healthcare settings, while the ample white space prevents information overload. The
+                                layout is strategically organized, with the most frequently used information placed
+                                prominently for easy access, facilitating a smooth workflow for physiotherapists who
+                                would be using the system in potentially fast-paced environments.</p>
+                        </div>
+
+
+                        </p>
+
+              
+        </div>
+    </div>
     <!-- Sketch Iteration Ends -->
 
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

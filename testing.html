@@ -87,10 +87,11 @@
                                 </ul>
                             </li>
                             <li><a href="research.html">research</a></li>
+                            <li><a href="ui.html">UI Design</a></li>
 
 
 
-                            <li class="menu-has-children"><a href="systemdesign.html">System Design</a>
+                            <li class="menu-has-children"><a href="sysdesign.html">System Design</a>
                                 <ul>
                                     <li><a href="systemdesign.html#sysarchitecture">System Architecture</a></li>
                                     <li><a href="">Sequence Diagram</a></li>
@@ -122,7 +123,7 @@
                                 </ul>
                             </li>
 
-                            <li class="menu-has-children"><a href="appendix.html">Appendix</a>
+                            <li class="menu-has-children"><a href="appendix.html">Appe</a>
                                 <ul>
                                     <li><a href=""></a></li>
                                     <li><a href=""></a></li>
@@ -152,19 +153,25 @@
 
 
     <section class="section-padding">
-        <div class="container">
+        <div class="container" id = "overview">
             <div class="row">
                 <h4 class="mb-4">Testing - Overview</h4>
                 <p> Our development process was underpinned by a comprehensive testing strategy, ensuring both the
-                    backend and frontend components of our application met stringent quality standards.</p>
+                    backend and frontend components of our application met stringent quality standards. OpenPhysio is a data transferring and storing medical technology, therefore it is necessary to produce thorough tests to ensure it’s usability, accuracy and effectiveness matches our moSCoW requirements. </p>
+
+                        <h5>Test Scope</h5>
+                        <ol>
+                            <li>FHIR is the data transferral standard commonly used by health practitioners. As the project relies heavily on transferring medical data then it is crucial that the ability of the software to transfer data- in line with these standards- should be tested. This ensures that the data is both transferred correctly but also in line with the industry standard.</li>
+                            <li>As it is medical practitioners who will be the primary users of the software, testing that the user experience is comfortable and the interface is similar to healthcare norms is vital to the sleek integration of the project into service.</li>
+                            <li>The aim of the project is to provide a succinct yet comprehensive view of patient performance. Therefore, testing the efficacy of its ability to provide the user with a visualization of patient improvement over time must be conducted.</li>
+                        </ol>
+
 
                 <p>In the backend, we adopted a Test-Driven Development methodology, which played a pivotal role in
                     shaping our core functionality. This approach involved writing <b>detailed unit tests</b> prior to
                     developing functional code, establishing a robust foundation for our backend services. Through this
                     rigorous process, we were able to identify and address potential issues early in the development
-                    cycle, enhancing code reliability and maintainability. The continuous cycle of testing and code
-                    refinement facilitated through test-driven development ensured that our backend logic was thoroughly
-                    validated against predefined criteria before integration.</p>
+                    cycle, enhancing code reliability and maintainability. Test-Driven Development also benefitted the development through allowing the developer to consider the purpose of each unit in the wider context of its subsystem. This also allowed for the precise consideration of the exact specifications of each function before the development process. The team continually adapted the backend to pass all unit tests and extending the unit tests when more functionality was required. </p>
 
                 <p>For the frontend, our strategy encompassed an exhaustive <b>User Acceptance Testing </b>regimen,
                     aimed at
@@ -183,21 +190,14 @@
 
                 <p>Following the successful validation of individual backend and frontend components, we moved to the
                     integration phase, where these components were synergized to function as a cohesive unit.
-                    Post-integration, we conducted a final round of User Acceptance Testing to verify that the
-                    integrated system met all functional requirements, user expectations, and quality standards. This
-                    end-to-end testing approach was crucial in unveiling any issues that only manifested in a fully
-                    integrated environment, enabling us to deliver a polished and user-validated product.</p>
+                    Once they had been integrated, they needed to be tested. It made the most sense to test these manually as synthetic data had been generated and the functionality of the site was predetermined- therefore it was a matter of testing whether the frontend could accurately display the stored data and transfer input to the backend for processing and storage. </p>
 
-                <p>In conclusion, our structured and layered testing strategy was pivotal in creating a robust,
-                    user-centric application. By emphasizing early testing in the backend and comprehensive user
-                    acceptance testing, including responsive design testing in the frontend, we
-                    established a solid foundation for delivering a high-quality software product that meets modern
-                    standards and user expectations.</p>
+                <p>The team is very happy with the feedback and, through user acceptance, it has become clear that there is enthusiasm towards deploying the software to production. All of the teams internal tests were passed and in good time, partly due to large efforts during coding sprints, and the user acceptance tests generated feedback which proved to be invaluable.</p>
 
             </div>
         </div>
 
-            <div class="container">
+            <div class="container" id = "UAT">
                 <div class="row">
 
                     <h4 class="mb-4">User Acceptance Testing</h4>
@@ -237,7 +237,7 @@
             </div>
 
 
-            <div class="container">
+            <div class="container" id = "RDT">
                 <div class="row">
 
                     <h4 class="mb-4">Responsive Design Testing</h4>
@@ -272,6 +272,19 @@
                     </div>
 
                 </div>
+
+
+            <div class="container" id = "unit">
+                <div class="row">
+
+                    <h4 class="mb-4">Unit Testing</h4>
+                    <p> The tools used by the team was Python’s Unittest library. A solid unit testing framework which allowed numerous subsystems of the backend to be tested and improved upon rapidly and with seamless debugging through the library’s terminal output. </p>
+                       <p> Unit tests were testing the backend, primarily the functions built upon the FHIR.resources python library, to ensure FHIR compliance. 
+                    </p>
+                </div>
+
+            </div>
+
         </section>
 </body>
 </section>
