@@ -29,80 +29,101 @@
     <!-- Preloader End -->
 
 <!-- Header Area Starts -->
-<header>
-<div id="header" id="home">
-    <div class="container">
-        <div class="row align-items-center justify-content-between d-flex">
-            <div id="logo">
-                <a href="index.html"><img src="" alt="" title="" /></a>
+<header class="header-area">
+    <div class="header-top">
+      <div id="header" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-between d-flex">
+              
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="index.html">Home</a></li>
+                        <li class="menu-has-children"><a href="requirements.html">Requirements</a>
+                            <ul>
+                                <li><a class="dropdown-item" href="requirements.html#project-background">Project
+                                        Background</a></li>
+                                <li><a class="dropdown-item" href="requirements.html#project-goal">Project Goal</a></li>
+                                <li><a class="dropdown-item" href="requirements.html#interview">User
+                                        Interviews</a></li>
+                                <li><a class="dropdown-item" href="requirements.html#psna">Personas</a></li>
+                                <li><a class="dropdown-item" href="requirements.html#use-cases">Use Cases</a></li>
+                                <li><a class="dropdown-item" href="requirements.html#moscow-list">MosCow List</a>
+                                </li>
+                            </ul>
+                        </li>
+                            <li class="menu-has-children"><a href="research.html">Research</a>
+                            <ul>
+                                <li><a class="dropdown-item" href="research.html#research-project">Project
+                                        Research</a></li>
+                                        <li><a class="dropdown-item" href="research.html#research-frontend">Frontend
+                                          Research</a></li>
+                                          <li><a class="dropdown-item" href="research.html#research-backend">Backend
+                                            Research</a></li>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-has-children"><a href="ui.html">HCI/UI</a>
+                          <ul>
+                              <li><a class="dropdown-item" href="ui.html#sketches">Sketches</a></li>
+                                      <li><a class="dropdown-item" href="ui.html#prototypes">Prototypes</a></li>
+                                        <li><a class="dropdown-item" href="ui.html#ui-design">Design Principles</a></li>
+                              </li>
+                          </ul>
+                      </li>
+
+
+
+                        <li class="menu-has-children"><a href="sysdesign.html">System Design</a>
+                            <ul>
+                                <li><a href="sysdesign.html#sysarch">System Architecture</a></li>
+                                <li><a href="sysdesign.html#sitemap">Site Map</a></li>
+                            </ul>
+                        </li>
+                        
+
+                        <li class="menu-has-children"><a href="implementation.html">Implementation</a>
+                            <ul>
+
+                                <li><a href="implementation.html#dnt">Dependencies and Tools</a></li>
+                                <li><a href="implementation.html#implementation-details">Implementation Details - Backend & Frontend</a></li>
+                                <li><a href = "implementation.html#data-strucutres"> Data Structures</a></li>
+                                <li><a href = "implementation.html#json"> JSON</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children"><a href="testing.html">Testing</a>
+                            <ul>
+                                <li><a href="testing.html#overview">Testing Overview</a></li>
+                                <li><a href="testing.html#UAT">User Acceptance Testing</a></li>
+                                <li><a href="testing.html#RDT">Responsive Design Testing</a></li>
+                                <li><a href="testing.html#unit">Unit Testing</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children"><a href="evaluation.html">Evaluation</a>
+                            <ul>
+                                <li><a href="evaluation.html#moscow">MosCow Evaluation</a></li>
+                                <li><a href="evaluation.html#indcon">Individual Contribution</a></li>
+                                <li><a href="evaluation.html#criteval">Critical Evaluation</a></li>
+                                <li><a href="evaluation.html#bug">Bug List</a></li>
+                                <li><a href="evaluation.html#futurework">Future Work</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-has-children"><a href="appendix.html">Appendix</a>
+                            <ul>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav><!-- #nav-menu-container -->
             </div>
-            <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="index.html">Home</a></li>
-                    <li class="menu-has-children"><a href="requirements.html">Requirements</a>
-                        <ul>
-                            <li><a class="dropdown-item" href="requirements.html#project-background">Project
-                                    Background</a></li>
-                            <li><a class="dropdown-item" href="requirements.html#client-requirements">Client
-                                    Requirements</a></li>
-                            <li><a class="dropdown-item" href="requirements.html#user-interviews">User
-                                    Interviews</a></li>
-                            <li><a class="dropdown-item" href="requirements.html#personas">Personas</a></li>
-                            <li><a class="dropdown-item" href="requirements.html#use-cases">Use Cases</a></li>
-                            <li><a class="dropdown-item" href="requirements.html#moscow-list">MosCow List</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="research.html">research</a></li>
-                    <li><a href="ui.html">UI Design</a></li>
-
-
-
-                    <li class="menu-has-children"><a href="sysdesign.html">System Design</a>
-                        <ul>
-                            <li><a href="systemdesign.html#sysarchitecture">System Architecture</a></li>
-                            <li><a href="">Sequence Diagram</a></li>
-                            <li><a href="">Sequence Diagram</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-has-children"><a href="implementation.html">Implementation</a>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-has-children"><a href="testing.html">Testing</a>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-has-children"><a href="evaluation.html">Evaluation</a>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-has-children"><a href="appendix.html">Appe</a>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </nav><!-- #nav-menu-container -->
         </div>
     </div>
-</div>
 </header>
     <!-- Header Area End -->
 
@@ -125,13 +146,25 @@
     <div class="container" id = "sysarch">
 
         <img src="./assets/images/sysdesign/sysdesign.png" alt="abstract" class="img-fluid">
+
         
 
         <p>Here is our system diagram which highlights the flow of data throughout the system. It all begins with the user who interacts with our web application through their work station. Based off of how they chose to interact with our web app, the data is transmitted through 2 servers and processed further in our Base.py file to get and post requests and responses to our Json Data Base. </p>
     
     </div>
+    <div class="row justify-content-center">
+        <h4 class = "mb-4">Sitemap Diagram</h4>
+        </div>
+    <div class="container" id = "sitemap">
 
-    </footer>
+        <img src="./assets/images/sysdesign/sitemap.png" alt="abstract" class="img-fluid">
+        
+
+        <p>Here is our Site Map. We begin when we enter the patient ID to access the system. We then have on our dashboard five options: record a new consultation, view the latest consultation (and associated snomed meaning guidance), view details regarding all past consultations (and download a specific consultation's details), take a look at patient's progress through graphs, and update the desired SNOMED (target) values </p>
+    
+    </div>
+
+    
     <!-- Footer Area End -->
 
 
@@ -146,5 +179,70 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
+
+    <!-- Footer Area Starts -->
+    <footer class="footer-area section-padding">
+
+
+
+        <div class="container">
+            <div class="row">
+                <!-- Site Map Section -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-widget-home mb-5 mb-lg-0">
+                        <h3 class="mb-4">Site Map</h3>
+                        <ul>
+                            <li class="mb-2"><a href="index.html">Home</a></li>
+                            <li class="mb-2"><a href="requirements.html">Requirements</a></li>
+                            <li class="mb-2"><a href="research.html">Research</a></li>
+                            <li class="mb-2"><a href="ui.html">UI/HCI</a></li>
+                            <li class="mb-2"><a href="sysdesign.html">System Design</a></li>
+                            <li class="mb-2"><a href="testing.html">Testing</a></li>
+                            <li class="mb-2"><a href="evaluation.html">Evaluation</a></li>
+                            <li class="mb-2"><a href="appendix.html">Appendix</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Content and Logos Section -->
+                <div class="col-lg-8 col-md-6">
+                    <div class="row">
+                        <!-- Content Section -->
+                        <div class="col-12">
+                            <span>
+                                <!-- Dynamic year update and copyrights -->
+
+                                <p>Copyright &copy; 2024 All rights reserved </p>
+                                <p> This is
+                                    the website for UCL Year2 2023-2024 COMP0016 Team42:OpenPhysio FHIR, which
+                                    introduces
+                                    the team project and contains all the portfolios</p>
+                                <p>This
+                                    template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                        href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                            </span>
+                        </div>
+                        <style>
+                            .social-icons ul {
+                                padding: 0;
+                                list-style: none;
+                            }
+
+                            .social-icons ul li {
+                                display: inline;
+                                /* or 'inline-block' */
+                                margin-right: 10px;
+                                /* Adjust spacing between icons */
+                            }
+                        </style>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Area End -->
 
 </html>
