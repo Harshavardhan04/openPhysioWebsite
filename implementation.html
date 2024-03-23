@@ -313,7 +313,7 @@
          -->
     <div class="container" id = "dnt">
         <div class="row justify-content-center">
-            <div class="col-xl-10">
+            <div class="col-xl-10" >
                 <div class="placeholder" id="prorsch"></div>
                 <div class="section-top text-center">
                 <h4 class="mb-4">Dependencies & Tools</b></h4>
@@ -329,7 +329,7 @@
                                     <h5><b>Python (Flask) and fhir.resources</b></h5>
                                 </div>
                                 <div class="doctor-text text-center">
-                                    <p>Our project's backend uses Flask, a lightweight Python web framework, to handle
+                                    <p style = "text-align: justify;">Our project's backend uses Flask, a lightweight Python web framework, to handle
                                         API requests and serve the React frontend. We utilize
                                         <code>fhir.resources</code> to manage FHIR-compliant data structures, ensuring
                                         our healthcare application adheres to standard formats. Functions like
@@ -349,7 +349,7 @@
                                     <h5><b>React and Material-UI</b></h5>
                                 </div>
                                 <div class="doctor-text text-center">
-                                    <p>React is the core of our frontend, enabling us to build a dynamic interface. We
+                                    <p style = "text-align: justify;">React is the core of our frontend, enabling us to build a dynamic interface. We
                                         use Material-UI for its ready-to-use React components, aligning with Material
                                         Design principles. This combination ensures a consistent and responsive user
                                         experience, with Material-UI's components enhancing the aesthetics and usability
@@ -368,7 +368,7 @@
                                     <h5><b>Axios</b></h5>
                                 </div>
                                 <div class="doctor-text text-center">
-                                    <p>Axios is employed within our React application to facilitate communication with
+                                    <p style = "text-align: justify;">Axios is employed within our React application to facilitate communication with
                                         the Flask backend. It handles all our HTTP requests, enabling data exchange
                                         between the user interface and the server. Axios's promise-based structure is
                                         instrumental in managing asynchronous operations, ensuring a smooth and
@@ -387,7 +387,7 @@
                                     <h5><b>React-Chartjs-2</b></h5>
                                 </div>
                                 <div class="doctor-text text-center">
-                                    <p>React-Chartjs-2 provides an intuitive and powerful way to include data
+                                    <p style = "text-align: justify;">React-Chartjs-2 provides an intuitive and powerful way to include data
                                         visualizations within our React components. Leveraging Chart.js under the hood,
                                         it allows us to render complex charts that are both informative and interactive,
                                         enhancing the data analysis capabilities of our healthcare application.</p>
@@ -405,7 +405,7 @@
                                     <h5><b>React Router</b></h5>
                                 </div>
                                 <div class="doctor-text text-center">
-                                    <p>React Router plays a pivotal role in our single-page application (SPA), enabling
+                                    <p style = "text-align: justify;">React Router plays a pivotal role in our single-page application (SPA), enabling
                                         navigational components and URL management without full page reloads. It helps
                                         us define routes and link components, allowing users to navigate our app
                                         efficiently and maintaining the state across different views.</p>
@@ -569,7 +569,7 @@ function downloadConsultationData(data) {
             <div class = "container">
                 <h4 class = "mb-5">The Backend </h4>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" style = "text-align: justify;">
                         <p>After completing our research and deciding to proceed in Python with FHIR.resources supporting the development of the backend, implementation began. The backend mainly revolved around transmitting data gathered from the user through the frontend to the data storage format - in a FHIR-compliant manner and then returning the data for display. The FHIR compliancy was ensured through the use of Fhir.resources objects which undertook their own internal validation. From there, it was a matter of selecting an appropriate object for a given data transmission. The backend developer settled on: the Patient object for basic patient data, the Observation object for measurements taken during the session, and the DocumentReference object for the notes taken during the session.</p>
                         
                         <p>Below is an example of one of the functions:</p>
@@ -616,7 +616,7 @@ function downloadConsultationData(data) {
                 <div class="col-lg-12">
                     <!-- Patient Details Section -->
                     <h4>Our base.py file </h4>
-                    <div class = "container">
+                    <div class = "container" style = "text-align: justify;">
 
                         <div class="row">
                             
@@ -646,7 +646,7 @@ function downloadConsultationData(data) {
                           </div>
                     </div>
                     <h4>The frontend </h4>
-                    <div class = "container">
+                    <div class = "container" style = "text-align: justify;">
                         <p>A lot of frontend code went into displaying several frontend components, and details regarding this can be found in our 
                             code's documentation. Here, we focus more on communication between our <code>base.py</code> file and the frontend, whilst outlinining (rather than describing) the frontend elements used for some key features in our system.
                         </p>
@@ -755,7 +755,7 @@ function downloadConsultationData(data) {
             <h4 class = "mb-4">Data Structures</h4></div>
             <div class="row">
   
-                <p>The project required significant data structure consideration for the sake of integration. The
+                <p style = "text-align: justify;">The project required significant data structure consideration for the sake of integration. The
                     backend was developed with the specific requests in mind. An example of this would be the decision
                     to utilise dictionaries for returning measured values. With the Snowmed of the body part as the key
                     and the values as the measured values. Another example would be when the backend retrieves desired
@@ -768,12 +768,12 @@ function downloadConsultationData(data) {
                 </div>
                 <div class="section-top text-center">
             <h4 class = "mb-4">Our use of JSON</h4></div>
-            <div class = "row">
+            <div class = "row" >
                 
                     <div class="image-container">
                       <img src="./assets/images/implementation/filestructure.png" alt="Relevant Image" style="width: 60%;">
                     </div>
-                    <div class="text-container">
+                    <div class="text-container" style = "text-align: justify;">
 
                       <p>Json files are heavily used to store the data collected as the Fhir.resources objects are easily converted into dictionaries- which make the most sense to be stored as Jsons. There are 5 files for data storage: Communication, which contains the testing and all of the backend functions; Patient which contains a Json for each patient with PatientNumber.json as each file. Desired which contains all of the desired values for a given Snomed code (with Snomed.json as the file name) contained within a a directory for each patient id (1 in the given diagram) and A similar situation is the case for the Notes and Observation except with the filename being observationNumber.json.</p>
                     </div>
